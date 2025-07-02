@@ -19,6 +19,13 @@ public class Professor {
     @JoinColumn (name = "customer_id")
     private Customer customer;
 
+
+    public Professor(Customer customer , int officeNumber, int researchArea) {
+        this.customer = customer;
+        this.officeNumber = officeNumber;
+        this.researchArea = researchArea;
+    }
+
     public int getId() {
         return id;
     }
